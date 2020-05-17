@@ -1,0 +1,299 @@
+
+Week_3: USER INPUTS AND CONDITIONS
+
+1. User Input and Type conversions
+
+a. Accepting user Inputs
+
+To accept user input we use input() function and the information entered 
+is accepted as a string
+
+What is Type Conversion?
+Python defines type conversion functions to directly convert one data type 
+to another which is useful in day-to-day and competitive programming.
+
+Converting Data Types
+Python gives us the ability to type convert easily from one type to another simply by
+wrapping the type around the variable.
+
+Handling Errors
+
+use try and expect block
+
+Try and except are used to catch
+errors. It works by trying to run what is inside the try block; if it doesn’t produce an error,
+then it continues without hitting the except block; however, if an error occurs, then the
+code in the except block runs. This is to make sure your program doesn’t stop running if
+an error pops up.  
+
+If statements
+An if statement works the same way that a decision is made. You check a condition,
+and if that condition is true, you perform the task, and if it’s not true, then you move on
+without performing that task. 
+
+The if statement checks to see if the given condition is True or False. If
+the condition is True, then the code block runs. If it is False, then the program continues
+without running any of the code indented directly after the if statement.
+
+
+Table 3-2. Comparison operators
+Operator Condition Functionality Example
+== Equality             if x == y:      if x is equal to y …
+!= Inequality           if x != y:      if x does not equal y…
+> Greater than          if x > y:       if x is greater than y…
+< Less than             if x < y:       if x is less than y…
+>= Greater or equal     if x >= y:      if x is greater or equal to y
+<= Less or equal        if x <= y:      if x is less or equal to y…
+
+Logical Operator “and”
+The “and” logical operator is to ensure that, when you check multiple conditions, both
+sides of the condition are True. This means that if either the condition to the left or right
+of the “and” is False, then the code will not run the block of code.
+
+Logical Operator “or”
+The “or” logical operator is used to check for one or both conditions to be true. Such
+that if the condition to the left is False and the condition to the right is True, the block of
+code will still run because at least one condition was True. The only time an “if block”
+will not run using an “or” operator is when both conditions are False.
+
+Logical Operator “not”
+In certain instances, you’ll want to check for the opposite of a value. The “not” operator
+is used for just that. It essentially returns the opposite of whatever the current value is.
+
+
+Membership Operators
+Membership operators are used to test if a sequence appears in an object. There are two
+keywords that we can use to check if a value exists in an object or not.
+
+Membership Operator “in”
+When you want to check if a given object has a value appear in it, you use the “in” operator.
+The best use case is checking for a certain value within strings.
+
+Membership Operator “not in”
+Likewise, if you want to check to see if an object doesn’t include a specific value, you
+would use the “not in” operator. This is essentially just checking the opposite of the “in”
+operator.
+
+
+week 4 list and loops
+What Are Lists?
+A list is a data structure in Python that is a mutable, ordered sequence of elements.
+Mutable means that you can change the items inside, while ordered sequence is in
+reference to index location. The first element in a list will always be located at index 0.
+Each element or value that is inside of a list is called an item. Just as strings are defined
+as characters between quotes, lists are defined by having different data types between
+square brackets [ ]. Also, like strings, each item within a list is assigned an index,
+or location, for where that item is saved in memory. Lists are also known as a data
+collection. Data collections are simply data types that can store multiple items.
+
+How Loops Work
+Loops are how programmers rerun the same lines of code several times. Loops will
+always run until a condition is met. Take a first-person shooter, the game will continue to
+run until either you’ve won, or your health reaches zero. Once either of those conditions
+occur, the game ends.
+
+Range( )
+Range allows us to count from one number to another while being able to define where
+to start and end and how much we increment or decrement by.
+
+Writing a While Loop
+Like a for loop, the while loop starts out with the keyword “while”. Following that, we
+have a conditional like we would use to write an if statement.
+
+
+While vs. For
+For loops are generally used when you need to count or iterate over
+a collection of elements. While loops are generally used when doing condition-based
+looping. When using a while loop, often you’ll use boolean variables. Each loop has
+their use cases; in most cases it’s personal preference, but
+
+Functions
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+A function can return data as a result.
+
+Like loops, functions follow an exact pattern for every functioned created. They all
+begin with the keyword “def”, followed by the name of the function. This name is
+arbitrary and can be anything except for Python keywords and previously defined
+functions. Directly following the name is the parenthesis, and within those are
+parameters. Lastly, we need an ending colon like any
+other Python statement.
+
+What Are Parameters?
+Parameters are temporary variables declared on the function definition.
+When you want to call a function
+with different values, you need to use parameters. Within the parenthesis of the function
+definition is where you would state a parameter name. This is an arbitrary variable name
+that you use to reference the value within the function block; however, you usually want
+it to be relevant to the data that you’re working with. When calling the function, you
+would pass in the necessary value to run the block of code with.
+
+
+*args
+The use of *args allows you to pass a variable number of arguments into a function. This
+allows you to make functions more modular. The magic isn’t the “args” keyword here
+though; it’s really the unary operator (*) that allows us to perform this feature. You could
+theoretically replace the word args with anyone, like “*data”, and it would still work.
+However, args is the default and general standard throughout the industry.
+
+**kwargs
+Like args, kwargs allows us to take in an arbitrary number of values in a function;
+however, it works as a dictionary with keyword arguments instead. Keyword arguments
+are values passed in with keys, which allow us to access them easily within the function
+block. Again, the magic here is in the two unary operators (**) not the keyword of
+kwargs.
+
+What Are Dictionaries?
+A dictionary is a collection of unordered data, which is stored in key-value pairs. What
+is meant by “unordered” is the way it is stored in memory. It is not accessible through
+an index, rather it is accessed through a key. Lists are known as ordered data collections
+because each item is assigned a specific location. Dictionaries work like a real-life
+dictionary, where the key is the word and the values are the definition. Dictionaries are
+useful for working with large data, mapped data, CSV files, APIs, sending or receiving
+data, and much more.
+
+Accessing Dictionary Information
+All data stored within a dictionary is accessed via the key associated with the value
+you’re trying to access. We simply write the name of the dictionary followed by square
+brackets. Inside of the square brackets is the key. This will retrieve the value stored at
+that key:
+
+Lists with Dictionaries
+The combination of lists within dictionaries and vice-versa can become confusing when
+trying to figure out how to access information. Always remember lists are indexed, and
+dictionaries use keys. Depending on the order of the data stored, you’ll need to do one
+or the other first. When a list is storing a dictionary, you need to access that dictionary
+by the index first. After that you have access to the key-value pairs within the dictionary.
+
+
+Tuples, Sets, Frozensets
+
+What Are Tuples?
+A tuple is identical to a list, except it is immutable. When something is immutable, it
+means that it cannot be altered once declared. Tuples are useful for storing information
+that you don’t want to change. They’re ordered like lists, so you can iterate through them
+using an index.
+
+What Are Sets?
+Sets share the same characteristics of lists and dictionaries. A set is a collection of
+information like a list; however, like a key in a dictionary, sets can only contain unique
+values. They are also an unordered collection. This means that they cannot be accessed
+by index but rather by the value itself like dictionary keys. They can be iterated through
+though, like how dictionary keys can be looped over. Sets are practical in situations of
+storing unique items.
+
+Declaring a Set
+
+There are two ways to declare a set. The first way is by using the keyword “set” followed
+by parenthesis and enclosing square brackets. The second way, which is more practical,
+looks like a dictionary being declared by using a set of curly brackets.
+
+What Are Frozensets?
+
+Frozensets are essentially the combination of a set and a tuple. They are immutable,
+unordered, and unique. These are perfect for sensitive information like bank account
+numbers, as you wouldn’t want to alter those. They can be iterated over, but not indexed.
+
+Declaring a Frozenset
+
+To declare a frozenset, you use the keyword “frozenset” followed by parenthesis and
+enclosing square brackets. This is the only way you can declare a frozenset.
+
+
+OOP
+OOP Stages
+There are two stages when using classes. The first stage is the class definition. Like
+function definitions, this stage is where you write the blueprint to be used when called.
+The second stage is called instantiation. It is the process of creating an object from the
+class definition. After an object is instantiated, it is known as an instance. You may have
+multiple instances from a single class definition.
+
+Creating a Class
+The first step in using classes is creating the class definition or “blueprint.” To create
+a new class, the syntax is like functions, but you use the class keyword instead of def.
+Within the indentation of this class block, we would write the blueprint for our class
+attributes and methods.
+
+The “self” Keyword
+The self keyword is a reference to the current instance of the class and is used to access
+variables and methods associated with that instance. Think about a soccer team you’ve
+never seen play before. How do you distinguish each player from the next? You would
+probably use the numbers on the back of their jerseys. Even though each player is a
+person with different features, it’s easy for you to pick out any of them based on their
+number. In Python, it’s essentially how objects that are created from the same source are
+identified.
+
+Global Attributes vs. Instance Attributes
+Without knowing it, you’ve been using both globally accessible attributes and instance
+accessible attributes. Global attributes can be referenced by the class directly and all
+its instances, whereas instance attributes (which are defined within the init method)
+can only be accessed by the class instances. If an attribute is declared inside of a class,
+but not within the init method, then it is known as a global attribute. Any attributes
+declared within the init method using the self keyword are instance attributes.
+
+List comprehension allows us to create a list filled with data in a single line. Rather
+than creating an empty list, iterating over some data, and appending it to the list all on
+separate lines, we can use comprehension to perform all these steps at once. It doesn’t
+improve performance, but it’s cleaner and helps reduce the lines of code within our
+program. With comprehension we can reduce two or more lines into one. Plus, it’s
+generally quicker to write.
+
+The syntax when using list comprehension depends on what you’re trying to write. The
+general syntax structure for list comprehensions looks like the following:
+>>> *result* = [ *transform* *iteration* *filter* ]
+
+Lambda functions, otherwise known as anonymous functions, are one-line functions
+within Python. Like list comprehension, lambda functions allow us to reduce the lines of
+code we need to write within our program. It doesn’t work for complicated functions but
+helps to improve readability of smaller functions.
+
+The syntax for lambda functions will generally remain the same, unlike list
+comprehensions when you begin to add the conditional statements. To start, let’s look at
+the basic structure:
+>>> lambda arguments : expression
+
+>>> lambda arguments : expression
+Lambdas will always begin with the keyword lambda. Following that you’ll find
+any arguments that are being passed in. On the right side of the colon, we’ll see the
+expression to be performed and returned. Lambdas return the expression by default, so
+we don’t need to use the keyword:
+>>> lambda arguments : value_to_return if condition else value_to_return
+Like list comprehension, the conditional statement goes at the end. This is as
+complex as lambda functions get. Anything more than this would require writing the
+function out completely.
+
+Map, Filter, and Reduce
+When working with data, you’ll generally need to be able to modify, filter, or calculate
+an expression from the data. That’s where these important built-in functions come in to
+play.
+
+The map function is used to iterate over a data collection and modify it.
+The filter function is used to iterate over a data collection, and you guessed it… filter out data that doesn’t meet a condition.
+Lastly, the reduce function takes a data collection and condenses it down to a single result, like the sum function for lists.
+
+Recursion is a concept in programming where a function calls itself one or more times
+within its block. These types of functions can often run into issues with speed, however,
+due to the function constantly calling itself. Memoization helps this process by storing
+values that were already calculated to be used later.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
